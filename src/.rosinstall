@@ -1,0 +1,6 @@
+- git:
+    local-name: gaze_arm
+    uri: https://github.com/yoneken/gaze_arm.git
+- git:
+    local-name: ros_book
+    uri: ick40195@gmail.com:AaronMR/Learning_ROS_for_Robotics_Programming_2nd_edition.git

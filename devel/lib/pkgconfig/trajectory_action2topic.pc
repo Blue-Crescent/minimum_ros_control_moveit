@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws_trobo/devel
+
+Name: trajectory_action2topic
+Description: Description of trajectory_action2topic
+Version: 0.0.0
+Cflags: -I/home/ubuntu/catkin_ws_trobo/src/trajectory_action2topic/include
+Libs: -L/home/ubuntu/catkin_ws_trobo/devel/lib 
+Requires: 

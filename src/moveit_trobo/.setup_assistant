@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: trobo_description
+    relative_path: urdf/trobo.urdf
+  SRDF:
+    relative_path: config/trobo.srdf
+  CONFIG:
+    generated_timestamp: 1482661166

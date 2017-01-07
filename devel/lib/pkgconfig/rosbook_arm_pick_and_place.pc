@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: rosbook_arm_pick_and_place
+Description: Description of rosbook_arm_pick_and_place
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ubuntu/catkin_ws/devel/lib 
+Requires: geometry_msgs moveit_msgs std_msgs trajectory_msgs
