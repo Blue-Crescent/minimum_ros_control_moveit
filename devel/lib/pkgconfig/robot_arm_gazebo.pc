@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/devel
-
-Name: robot_arm_gazebo
-Description: Description of robot_arm_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/ubuntu/catkin_ws/devel/lib 
-Requires: 

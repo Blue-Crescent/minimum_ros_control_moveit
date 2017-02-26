@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/devel
-
-Name: moveit_ikfast
-Description: Description of moveit_ikfast
-Version: 3.1.0
-Cflags: 
-Libs: -L/home/ubuntu/catkin_ws/devel/lib 
-Requires: 

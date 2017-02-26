@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/devel
-
-Name: robot_arm_bringup
-Description: Description of robot_arm_bringup
-Version: 0.3.3
-Cflags: 
-Libs: -L/home/ubuntu/catkin_ws/devel/lib 
-Requires: 

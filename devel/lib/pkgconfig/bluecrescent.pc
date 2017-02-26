@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/devel
-
-Name: bluecrescent
-Description: Description of bluecrescent
-Version: 0.0.0
-Cflags: -I/home/ubuntu/catkin_ws/src/bluecrescent/include
-Libs: -L/home/ubuntu/catkin_ws/devel/lib -lbluecrescent
-Requires: urdf roscpp hardware_interface transmission_interface controller_manager
