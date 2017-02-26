@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/Documents/catkin_ws/src/minimum_ros_control_moveit/install
-
-Name: moveit_trobo
-Description: Description of moveit_trobo
-Version: 0.2.0
-Cflags: 
-Libs: -L/home/ubuntu/Documents/catkin_ws/src/minimum_ros_control_moveit/install/lib 
-Requires: 
