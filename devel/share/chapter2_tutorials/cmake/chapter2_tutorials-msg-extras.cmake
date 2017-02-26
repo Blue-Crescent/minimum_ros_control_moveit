@@ -1,2 +1,0 @@
-set(chapter2_tutorials_MESSAGE_FILES "/home/ubuntu/catkin_ws/src/trash/Learning_ROS_for_Robotics_Programming_2nd_edition/chapter2_tutorials/msg/chapter2_msg1.msg")
-set(chapter2_tutorials_SERVICE_FILES "/home/ubuntu/catkin_ws/src/trash/Learning_ROS_for_Robotics_Programming_2nd_edition/chapter2_tutorials/srv/chapter2_srv1.srv")
