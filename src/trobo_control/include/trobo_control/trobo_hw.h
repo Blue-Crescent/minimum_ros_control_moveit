@@ -21,10 +21,9 @@ public:
 protected:
   hardware_interface::JointStateInterface jnt_state_interface;
   hardware_interface::PositionJointInterface jnt_pos_interface;
-  double cmd_[1];
-  double pos_[1];
-  double vel_[1];
-  double eff_[1];
+  double cmd_[10];
+  double pos_[10];
+  double vel_[10];
+  double eff_[10];
 
 };
-

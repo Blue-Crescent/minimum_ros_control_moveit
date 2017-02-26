@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ubuntu/catkin_ws_trobo/devel/setup.sh
+    local-name: /home/ubuntu/Documents/catkin_ws/src/minimum_ros_control_moveit/devel/setup.sh
