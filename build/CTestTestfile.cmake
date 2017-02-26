@@ -1,12 +1,11 @@
 # CMake generated Testfile for 
-# Source directory: /home/ubuntu/catkin_ws_trobo/src
-# Build directory: /home/ubuntu/catkin_ws_trobo/build
+# Source directory: /home/ubuntu/Documents/catkin_ws/src/minimum_ros_control_moveit/src
+# Build directory: /home/ubuntu/Documents/catkin_ws/src/minimum_ros_control_moveit/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-SUBDIRS(gtest)
-SUBDIRS(gazebo_trobo)
-SUBDIRS(minimum_ros_control)
-SUBDIRS(trobo_description)
-SUBDIRS(moveit_trobo)
-SUBDIRS(trobo_control)
+subdirs(gtest)
+subdirs(minimum_ros_control)
+subdirs(trobo_description)
+subdirs(moveit_trobo)
+subdirs(trobo_control)
