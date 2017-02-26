@@ -1,2 +1,0 @@
-gazebo_trobo:minimum_ros_control:moveit_trobo:trobo_control:trobo_description
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws_trobo/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws_trobo/install -G Unix Makefiles

@@ -5,13 +5,13 @@
 
 int main(int argc, char *argv[])
 {
-  ros::init(argc, argv, "trobo");
+  ros::init(argc, argv, "/trobo");
   ros::NodeHandle nh;
 
   TRobo trobo;
   controller_manager::ControllerManager cm(&trobo, nh);
 
-  ros::Rate rate(1.0 / trobo.getPeriod().toSec());
+  ros::Rate rate(100.0 / trobo.getPeriod().toSec());
   ros::AsyncSpinner spinner(1);
   spinner.start();
 

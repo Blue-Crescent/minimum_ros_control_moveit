@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws_trobo/install
-
-Name: trobo_control
-Description: Description of trobo_control
-Version: 0.0.0
-Cflags: -I/home/ubuntu/catkin_ws_trobo/install/include
-Libs: -L/home/ubuntu/catkin_ws_trobo/install/lib 
-Requires: roscpp hardware_interface transmission_interface controller_manager
