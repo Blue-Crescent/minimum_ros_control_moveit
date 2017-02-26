@@ -2,10 +2,9 @@
 * Author: Blue-Crescent <ick40195+ros@gmail.com>
 * License: GNU General Public License, version 3 (GPL-3.0)
 * Inception Date: 7 Jan 2017
-* Version: 1.0.0
+* Version: 1.1.0
 
 This is a minimum sample to use ros_control with MoveIt! for RealRobot.
-
 
 ## Develop and Contribute
 
