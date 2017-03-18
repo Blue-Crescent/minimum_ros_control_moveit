@@ -7,4 +7,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Blue-Crescent
     author_email: ick40195+ros@gmail.com
-    generated_timestamp: 1489845674
+    generated_timestamp: 1489847090
