@@ -5,12 +5,6 @@
 <!-- =================================================================================== -->
 <!-- Revolute-Revolute Manipulator -->
 <robot name="trobo" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <!-- Constants for robot dimensions -->
-  <!-- Square dimensions (widthxwidth) of beams -->
-  <!-- Link 1 -->
-  <!-- Link 2 -->
-  <!-- Link 3 -->
-  <!-- Size of square 'camera' box -->
   <!-- Space btw top of beam and the each joint -->
   <!-- Used for fixing robot to Gazebo 'base_link' -->
   <link name="world"/>
@@ -73,6 +67,44 @@
       <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="motor1">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="joint2" type="continuous">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin rpy="0 0 0" xyz="0 0.1 0.95"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.7"/>
+  </joint>
+  <!-- Leaf Link -->
+  <link name="link3">
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.45"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.45"/>
+      <geometry>
+        <box size="0.1 0.1 1"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.45"/>
+      <mass value="1"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint2">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
       <hardwareInterface>PositionJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
