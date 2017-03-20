@@ -14,7 +14,7 @@
         <link name="link2" />
         <joint name="joint1" />
         <joint name="joint2" />
-        <chain base_link="link1" tip_link="link2" />
+        <chain base_link="link1" tip_link="link3" />
     </group>
     <group name="leaf">
         <link name="link3" />

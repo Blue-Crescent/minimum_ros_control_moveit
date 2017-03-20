@@ -2,27 +2,29 @@
 	<!-- gazeboo
   <include file="$(find minimum_ros_control)/launch/trobo_world.launch" />   
   Load the URDF, SRDF and other .yaml configuration files on the param server
+  <rosparam param="controller_joint_names">[joint1, joint2]</rosparam>
 	     -->
-  <rosparam>
+
+
+  
+
+
+<rosparam>
     trobo:
       # Publish all joint states -----------------------------------
       joint_state_controller:
         type: joint_state_controller/JointStateController
         publish_rate: 100
-  
       # Position Controllers ---------------------------------------
-      joint1_position_controller:
+      joint_position_controller:
         type: position_controllers/JointTrajectoryController
-        pid: {p: 10.0, i: 0.0, d: 0.0}
         joints: 
           - joint1
           - joint2
   </rosparam>
-
-  <node name="controller_spawner" pkg="controller_manager" 
-        type="spawner" respawn="false"
-	output="screen" ns="/trobo" 
-        args="joint_state_controller joint1_position_controller"/> 
+  
+  <!-- load controller_list 
+       -->
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" 
 	  type="joint_state_publisher" respawn="false" output="screen">
@@ -33,8 +35,7 @@
 	<remap from="/joint_states" to="/trobo/joint_states" />
   </node>
 
-
-  <include file="$(find moveit_trobo)/launch/planning_context.launch">
+<include file="$(find moveit_trobo)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
   </include>
 
@@ -47,7 +48,11 @@
     <arg name="debug" value="false"/>
   </include>
 
+  <!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
+  
 
+  <!-- load controller_list 
+       -->
   <!-- Rviz and load the default config to see the state of the move_group node -->
 
   <include file="$(find moveit_trobo)/launch/moveit_rviz.launch">
