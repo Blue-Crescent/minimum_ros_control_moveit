@@ -18,14 +18,18 @@ if __name__=='__main__':
     
     # plan to a random location 
     a = robot.arm
-    a.set_start_state(RobotState())
-    r = a.get_random_joint_values()
-    print "Planning to random joint position: "
-    print r
-    p = a.plan(r)
-    print "Solution:"
-    print p
 
-    a.execute(p)
+
+    while not rospy.is_shutdown():
+        a.set_start_state(RobotState())
+        r = a.get_random_joint_values()
+        p = a.plan(r)
+        a.execute(p)
+        rospy.sleep(10)
+#        print "Planning to random joint position: "
+#        print r
+#        print "Solution:"
+#        print p
+
     
     roscpp_shutdown()

@@ -40,6 +40,6 @@ void TRobo::write(ros::Time time, ros::Duration period)
   pos_[1] = pos_[1] + 0.0001* (cmd_[1] - pos_[1]);
   ROS_DEBUG_STREAM("Debug:" << pos_[0] << cmd_[0]);
   // Dump cmd_ from MoveIt!, current simulated real robot pos_.
-  //printf("%f, %f\n",pos_[0],cmd_[0]);
+  printf("%f, %f, \%f, %f\n",pos_[0],cmd_[0],pos_[1],cmd_[1]);
 }
 
