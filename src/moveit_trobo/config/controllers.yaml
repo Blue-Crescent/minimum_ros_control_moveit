@@ -5,5 +5,5 @@ controller_list:
     type: FollowJointTrajectory
     default: true
     joints:
-      - joint1
-      - joint2
+      - head_yaw
+      - head_roll

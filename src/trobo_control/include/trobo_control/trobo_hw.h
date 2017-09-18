@@ -19,11 +19,11 @@ public:
   void write(ros::Time, ros::Duration);
 
 protected:
+  double cmd_[2];
+  double pos_[2];
+  double vel_[2];
+  double eff_[2];
   hardware_interface::JointStateInterface jnt_state_interface;
   hardware_interface::PositionJointInterface jnt_pos_interface;
-  double cmd_[10];
-  double pos_[10];
-  double vel_[10];
-  double eff_[10];
 
 };
